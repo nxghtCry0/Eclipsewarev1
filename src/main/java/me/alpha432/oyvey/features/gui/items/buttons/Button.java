@@ -1,11 +1,11 @@
-package me.alpha432.oyvey.features.gui.items.buttons;
+package me.nxght.eclipseware.features.gui.items.buttons;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.gui.Component;
-import me.alpha432.oyvey.features.gui.OyVeyGui;
-import me.alpha432.oyvey.features.gui.items.Item;
-import me.alpha432.oyvey.features.modules.client.ClickGui;
-import me.alpha432.oyvey.util.render.RenderUtil;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.features.gui.Component;
+import me.nxght.eclipseware.features.gui.OyVeyGui;
+import me.nxght.eclipseware.features.gui.items.Item;
+import me.nxght.eclipseware.features.modules.client.ClickGui;
+import me.nxght.eclipseware.util.render.RenderUtil;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.sound.SoundEvents;
@@ -21,7 +21,7 @@ public class Button
 
     @Override
     public void drawScreen(DrawContext context, int mouseX, int mouseY, float partialTicks) {
-        RenderUtil.rect(context.getMatrices(), this.x, this.y, this.x + (float) this.width, this.y + (float) this.height - 0.5f, this.getState() ? (!this.isHovering(mouseX, mouseY) ? OyVey.colorManager.getColorWithAlpha(OyVey.moduleManager.getModuleByClass(ClickGui.class).hoverAlpha.getValue()) : OyVey.colorManager.getColorWithAlpha(OyVey.moduleManager.getModuleByClass(ClickGui.class).alpha.getValue())) : (!this.isHovering(mouseX, mouseY) ? 0x11555555 : -2007673515));
+        RenderUtil.rect(context.getMatrices(), this.x, this.y, this.x + (float) this.width, this.y + (float) this.height - 0.5f, this.getState() ? (!this.isHovering(mouseX, mouseY) ? eclipseware.colorManager.getColorWithAlpha(eclipseware.moduleManager.getModuleByClass(ClickGui.class).hoverAlpha.getValue()) : eclipseware.colorManager.getColorWithAlpha(eclipseware.moduleManager.getModuleByClass(ClickGui.class).alpha.getValue())) : (!this.isHovering(mouseX, mouseY) ? 0x11555555 : -2007673515));
         drawString(this.getName(), this.x + 2.3f, this.y - 2.0f - (float) OyVeyGui.getClickGui().getTextOffset(), this.getState() ? -1 : -5592406);
     }
 

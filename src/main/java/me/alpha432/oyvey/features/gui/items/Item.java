@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.features.gui.items;
+package me.nxght.eclipseware.features.gui.items;
 
-import me.alpha432.oyvey.features.Feature;
+import me.nxght.eclipseware.features.Feature;
 import net.minecraft.client.gui.DrawContext;
 
 import java.awt.*;

@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.util.traits;
+package me.nxght.eclipseware.util.traits;
 
 import com.google.gson.JsonElement;
 

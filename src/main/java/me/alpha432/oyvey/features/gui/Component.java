@@ -1,12 +1,12 @@
-package me.alpha432.oyvey.features.gui;
+package me.nxght.eclipseware.features.gui;
 
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.gui.items.Item;
-import me.alpha432.oyvey.features.gui.items.buttons.Button;
-import me.alpha432.oyvey.features.modules.client.ClickGui;
-import me.alpha432.oyvey.util.ColorUtil;
-import me.alpha432.oyvey.util.render.RenderUtil;
-import me.alpha432.oyvey.util.render.ScissorUtil;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.features.gui.items.Item;
+import me.nxght.eclipseware.features.gui.items.buttons.Button;
+import me.nxght.eclipseware.features.modules.client.ClickGui;
+import me.nxght.eclipseware.util.ColorUtil;
+import me.nxght.eclipseware.util.render.RenderUtil;
+import me.nxght.eclipseware.util.render.ScissorUtil;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.sound.SoundEvents;

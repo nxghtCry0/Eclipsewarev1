@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.features.modules.misc;
+package me.nxght.eclipseware.features.modules.misc;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.features.modules.Module;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.features.commands.Command;
+import me.nxght.eclipseware.features.modules.Module;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import org.lwjgl.glfw.GLFW;
@@ -29,12 +29,12 @@ public class MCF extends Module {
         if (!(targetedEntity instanceof PlayerEntity)) return;
         String name = ((PlayerEntity) targetedEntity).getGameProfile().getName();
 
-        if (OyVey.friendManager.isFriend(name)) {
-            OyVey.friendManager.removeFriend(name);
+        if (eclipseware.friendManager.isFriend(name)) {
+            eclipseware.friendManager.removeFriend(name);
 
             Command.sendMessage("{red} %s has been unfriended.", name);
         } else {
-            OyVey.friendManager.addFriend(name);
+            eclipseware.friendManager.addFriend(name);
             Command.sendMessage("{aqua} %s has been friended.", name);
         }
     }

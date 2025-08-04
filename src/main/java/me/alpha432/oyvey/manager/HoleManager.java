@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
 import com.google.common.eventbus.Subscribe;
-import me.alpha432.oyvey.event.impl.UpdateEvent;
-import me.alpha432.oyvey.features.Feature;
+import me.nxght.eclipseware.event.impl.UpdateEvent;
+import me.nxght.eclipseware.features.Feature;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.BlockPos;

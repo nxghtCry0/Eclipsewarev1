@@ -1,15 +1,15 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.settings.Bind;
-import me.alpha432.oyvey.features.settings.EnumConverter;
-import me.alpha432.oyvey.features.settings.Setting;
-import me.alpha432.oyvey.util.traits.Jsonable;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.features.settings.Bind;
+import me.nxght.eclipseware.features.settings.EnumConverter;
+import me.nxght.eclipseware.features.settings.Setting;
+import me.nxght.eclipseware.util.traits.Jsonable;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.nio.file.Files;
@@ -17,11 +17,11 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class ConfigManager {
-    private static final Path OYVEY_PATH = FabricLoader.getInstance().getGameDir().resolve("oyvey");
+    private static final Path OYVEY_PATH = FabricLoader.getInstance().getGameDir().resolve("eclipseware");
     private static final Gson gson = new GsonBuilder()
             .setPrettyPrinting()
             .create();
-    private final List<Jsonable> jsonables = List.of(OyVey.friendManager, OyVey.moduleManager, OyVey.commandManager);
+    private final List<Jsonable> jsonables = List.of(eclipseware.friendManager, eclipseware.moduleManager, eclipseware.commandManager);
 
     @SuppressWarnings({"rawtypes", "unchecked"})
     public static void setValueFromJson(Feature feature, Setting setting, JsonElement element) {
@@ -55,7 +55,7 @@ public class ConfigManager {
                 }
             }
             default -> {
-                OyVey.LOGGER.error("Unknown Setting type for: " + feature.getName() + " : " + setting.getName());
+                eclipseware.LOGGER.error("Unknown Setting type for: " + feature.getName() + " : " + setting.getName());
             }
         }
     }

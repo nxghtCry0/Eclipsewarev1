@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.features.modules.player;
+package me.nxght.eclipseware.features.modules.player;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.modules.Module;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.features.modules.Module;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 
 public class NoFall extends Module {
@@ -11,7 +11,7 @@ public class NoFall extends Module {
 
     @Override
     public void onUpdate() {
-        if (!mc.player.isOnGround() && OyVey.positionManager.getFallDistance() > 3) {
+        if (!mc.player.isOnGround() && eclipseware.positionManager.getFallDistance() > 3) {
             boolean bl = mc.player.horizontalCollision;
             PlayerMoveC2SPacket.Full pakcet = new PlayerMoveC2SPacket.Full(mc.player.getX(), mc.player.getY() + 0.000000001, mc.player.getZ(),
                     mc.player.getYaw(), mc.player.getPitch(), false, bl);

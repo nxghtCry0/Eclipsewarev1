@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.features;
+package me.nxght.eclipseware.features;
 
-import me.alpha432.oyvey.features.settings.Setting;
-import me.alpha432.oyvey.features.settings.SettingFactory;
-import me.alpha432.oyvey.util.traits.Util;
+import me.nxght.eclipseware.features.settings.Setting;
+import me.nxght.eclipseware.features.settings.SettingFactory;
+import me.nxght.eclipseware.util.traits.Util;
 
 import java.util.ArrayList;
 import java.util.List;

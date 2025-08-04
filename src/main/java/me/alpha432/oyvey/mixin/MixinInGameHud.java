@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.mixin;
+package me.nxght.eclipseware.mixin;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import me.alpha432.oyvey.event.impl.Render2DEvent;
+import me.nxght.eclipseware.event.impl.Render2DEvent;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.hud.InGameHud;
@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import static me.alpha432.oyvey.util.traits.Util.EVENT_BUS;
+import static me.nxght.eclipseware.util.traits.Util.EVENT_BUS;
 
 @Mixin(InGameHud.class)
 public class MixinInGameHud {

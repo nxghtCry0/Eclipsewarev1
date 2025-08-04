@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.event;
+package me.nxght.eclipseware.event;
 
 public class Event {
     private boolean cancelled;

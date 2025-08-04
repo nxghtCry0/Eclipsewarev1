@@ -1,9 +1,9 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import me.alpha432.oyvey.util.traits.Jsonable;
+import me.nxght.eclipseware.util.traits.Jsonable;
 import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.ArrayList;

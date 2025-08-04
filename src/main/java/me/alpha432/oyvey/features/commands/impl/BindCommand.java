@@ -1,12 +1,12 @@
-package me.alpha432.oyvey.features.commands.impl;
+package me.nxght.eclipseware.features.commands.impl;
 
 import com.google.common.eventbus.Subscribe;
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.event.impl.KeyEvent;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.features.modules.Module;
-import me.alpha432.oyvey.features.settings.Bind;
-import me.alpha432.oyvey.util.KeyboardUtil;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.event.impl.KeyEvent;
+import me.nxght.eclipseware.features.commands.Command;
+import me.nxght.eclipseware.features.modules.Module;
+import me.nxght.eclipseware.features.settings.Bind;
+import me.nxght.eclipseware.util.KeyboardUtil;
 import net.minecraft.util.Formatting;
 import org.lwjgl.glfw.GLFW;
 
@@ -27,7 +27,7 @@ public class BindCommand
             return;
         }
         String moduleName = commands[0];
-        Module module = OyVey.moduleManager.getModuleByName(moduleName);
+        Module module = eclipseware.moduleManager.getModuleByName(moduleName);
         if (module == null) {
             sendMessage("Unknown module '%s'!", moduleName);
             return;

@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.util;
+package me.nxght.eclipseware.util;
 
-import me.alpha432.oyvey.util.traits.Util;
+import me.nxght.eclipseware.util.traits.Util;
 import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;

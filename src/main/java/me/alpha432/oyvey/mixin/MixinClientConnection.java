@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.mixin;
+package me.nxght.eclipseware.mixin;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
-import me.alpha432.oyvey.event.impl.PacketEvent;
+import me.nxght.eclipseware.event.impl.PacketEvent;
 import net.minecraft.network.ClientConnection;
 import net.minecraft.network.NetworkSide;
 import net.minecraft.network.PacketCallbacks;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import static me.alpha432.oyvey.util.traits.Util.EVENT_BUS;
+import static me.nxght.eclipseware.util.traits.Util.EVENT_BUS;
 
 @Mixin(ClientConnection.class)
 public class MixinClientConnection {

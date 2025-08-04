@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.features.commands.impl;
+package me.nxght.eclipseware.features.commands.impl;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.features.modules.Module;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.features.commands.Command;
+import me.nxght.eclipseware.features.modules.Module;
 
 public class ToggleCommand extends Command {
     public ToggleCommand() {
@@ -15,7 +15,7 @@ public class ToggleCommand extends Command {
             notFound();
             return;
         }
-        Module mod = OyVey.moduleManager.getModuleByName(var1[0]);
+        Module mod = eclipseware.moduleManager.getModuleByName(var1[0]);
         if (mod == null) {
             notFound();
             return;

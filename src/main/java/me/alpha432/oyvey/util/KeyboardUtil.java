@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.util;
+package me.nxght.eclipseware.util;
 
-import me.alpha432.oyvey.features.settings.Bind;
+import me.nxght.eclipseware.features.settings.Bind;
 
 public class KeyboardUtil {
     public static String getKeyName(int key) {

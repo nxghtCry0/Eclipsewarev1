@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.features.settings;
+package me.nxght.eclipseware.features.settings;
 
 import com.google.common.base.Converter;
 import com.google.gson.JsonElement;

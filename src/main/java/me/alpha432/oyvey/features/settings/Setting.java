@@ -1,11 +1,11 @@
-package me.alpha432.oyvey.features.settings;
+package me.nxght.eclipseware.features.settings;
 
-import me.alpha432.oyvey.event.impl.ClientEvent;
-import me.alpha432.oyvey.features.Feature;
+import me.nxght.eclipseware.event.impl.ClientEvent;
+import me.nxght.eclipseware.features.Feature;
 
 import java.util.function.Predicate;
 
-import static me.alpha432.oyvey.util.traits.Util.EVENT_BUS;
+import static me.nxght.eclipseware.util.traits.Util.EVENT_BUS;
 
 public class Setting<T> {
     private final String name;

@@ -1,20 +1,20 @@
-package me.alpha432.oyvey;
+package me.nxght.eclipseware;
 
-import me.alpha432.oyvey.manager.*;
-import me.alpha432.oyvey.util.TextUtil;
+import me.nxght.eclipseware.manager.*;
+import me.nxght.eclipseware.util.TextUtil;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.SharedConstants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class OyVey implements ModInitializer, ClientModInitializer {
-    public static final String NAME = "OyVey";
+public class eclipseware implements ModInitializer, ClientModInitializer {
+    public static final String NAME = "eclipseware";
     public static final String VERSION = "0.0.3 - " + SharedConstants.getGameVersion().getName();
 
     public static float TIMER = 1f;
 
-    public static final Logger LOGGER = LogManager.getLogger("OyVey");
+    public static final Logger LOGGER = LogManager.getLogger("eclipseware");
     public static ServerManager serverManager;
     public static ColorManager colorManager;
     public static RotationManager rotationManager;

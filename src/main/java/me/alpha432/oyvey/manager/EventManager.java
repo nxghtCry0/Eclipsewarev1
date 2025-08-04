@@ -1,12 +1,12 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
 import com.google.common.eventbus.Subscribe;
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.event.Stage;
-import me.alpha432.oyvey.event.impl.*;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.util.models.Timer;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.event.Stage;
+import me.nxght.eclipseware.event.impl.*;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.features.commands.Command;
+import me.nxght.eclipseware.util.models.Timer;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.packet.s2c.play.WorldTimeUpdateS2CPacket;
 import net.minecraft.util.Formatting;
@@ -24,16 +24,16 @@ public class EventManager extends Feature {
 
     @Subscribe
     public void onUpdate(UpdateEvent event) {
-        mc.getWindow().setTitle("OyVey 0.0.3");
+        mc.getWindow().setTitle("eclipseware 0.0.3");
         if (!fullNullCheck()) {
-//            OyVey.inventoryManager.update();
-            OyVey.moduleManager.onUpdate();
-            OyVey.moduleManager.sortModules(true);
+//            eclipseware.inventoryManager.update();
+            eclipseware.moduleManager.onUpdate();
+            eclipseware.moduleManager.sortModules(true);
             onTick();
 //            if ((HUD.getInstance()).renderingMode.getValue() == HUD.RenderingMode.Length) {
-//                OyVey.moduleManager.sortModules(true);
+//                eclipseware.moduleManager.sortModules(true);
 //            } else {
-//                OyVey.moduleManager.sortModulesABC();
+//                eclipseware.moduleManager.sortModulesABC();
 //            }
         }
     }
@@ -41,7 +41,7 @@ public class EventManager extends Feature {
     public void onTick() {
         if (fullNullCheck())
             return;
-        OyVey.moduleManager.onTick();
+        eclipseware.moduleManager.onTick();
         for (PlayerEntity player : mc.world.getPlayers()) {
             if (player == null || player.getHealth() > 0.0F)
                 continue;
@@ -55,36 +55,36 @@ public class EventManager extends Feature {
         if (fullNullCheck())
             return;
         if (event.getStage() == Stage.PRE) {
-            OyVey.speedManager.updateValues();
-            OyVey.rotationManager.updateRotations();
-            OyVey.positionManager.updatePosition();
+            eclipseware.speedManager.updateValues();
+            eclipseware.rotationManager.updateRotations();
+            eclipseware.positionManager.updatePosition();
         }
         if (event.getStage() == Stage.POST) {
-            OyVey.rotationManager.restoreRotations();
-            OyVey.positionManager.restorePosition();
+            eclipseware.rotationManager.restoreRotations();
+            eclipseware.positionManager.restorePosition();
         }
     }
 
     @Subscribe
     public void onPacketReceive(PacketEvent.Receive event) {
-        OyVey.serverManager.onPacketReceived();
+        eclipseware.serverManager.onPacketReceived();
         if (event.getPacket() instanceof WorldTimeUpdateS2CPacket)
-            OyVey.serverManager.update();
+            eclipseware.serverManager.update();
     }
 
     @Subscribe
     public void onWorldRender(Render3DEvent event) {
-        OyVey.moduleManager.onRender3D(event);
+        eclipseware.moduleManager.onRender3D(event);
     }
 
     @Subscribe
     public void onRenderGameOverlayEvent(Render2DEvent event) {
-        OyVey.moduleManager.onRender2D(event);
+        eclipseware.moduleManager.onRender2D(event);
     }
 
     @Subscribe
     public void onKeyInput(KeyEvent event) {
-        OyVey.moduleManager.onKeyPressed(event.getKey());
+        eclipseware.moduleManager.onKeyPressed(event.getKey());
     }
 
     @Subscribe
@@ -93,7 +93,7 @@ public class EventManager extends Feature {
             event.cancel();
             try {
                 if (event.getMessage().length() > 1) {
-                    OyVey.commandManager.executeCommand(event.getMessage().substring(Command.getCommandPrefix().length() - 1));
+                    eclipseware.commandManager.executeCommand(event.getMessage().substring(Command.getCommandPrefix().length() - 1));
                 } else {
                     Command.sendMessage("Please enter a command.");
                 }

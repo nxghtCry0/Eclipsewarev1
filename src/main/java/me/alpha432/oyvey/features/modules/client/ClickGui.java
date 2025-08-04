@@ -1,12 +1,12 @@
-package me.alpha432.oyvey.features.modules.client;
+package me.nxght.eclipseware.features.modules.client;
 
 import com.google.common.eventbus.Subscribe;
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.event.impl.ClientEvent;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.features.gui.OyVeyGui;
-import me.alpha432.oyvey.features.modules.Module;
-import me.alpha432.oyvey.features.settings.Setting;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.event.impl.ClientEvent;
+import me.nxght.eclipseware.features.commands.Command;
+import me.nxght.eclipseware.features.gui.OyVeyGui;
+import me.nxght.eclipseware.features.modules.Module;
+import me.nxght.eclipseware.features.settings.Setting;
 import org.lwjgl.glfw.GLFW;
 
 public class ClickGui
@@ -50,10 +50,10 @@ public class ClickGui
     public void onSettingChange(ClientEvent event) {
         if (event.getStage() == 2 && event.getSetting().getFeature().equals(this)) {
             if (event.getSetting().equals(this.prefix)) {
-                OyVey.commandManager.setPrefix(this.prefix.getPlannedValue());
-                Command.sendMessage("Prefix set to {global} %s", OyVey.commandManager.getPrefix());
+                eclipseware.commandManager.setPrefix(this.prefix.getPlannedValue());
+                Command.sendMessage("Prefix set to {global} %s", eclipseware.commandManager.getPrefix());
             }
-            OyVey.colorManager.setColor(this.red.getPlannedValue(), this.green.getPlannedValue(), this.blue.getPlannedValue(), this.hoverAlpha.getPlannedValue());
+            eclipseware.colorManager.setColor(this.red.getPlannedValue(), this.green.getPlannedValue(), this.blue.getPlannedValue(), this.hoverAlpha.getPlannedValue());
         }
     }
 
@@ -67,8 +67,8 @@ public class ClickGui
 
     @Override
     public void onLoad() {
-        OyVey.colorManager.setColor(this.red.getValue(), this.green.getValue(), this.blue.getValue(), this.hoverAlpha.getValue());
-        OyVey.commandManager.setPrefix(this.prefix.getValue());
+        eclipseware.colorManager.setColor(this.red.getValue(), this.green.getValue(), this.blue.getValue(), this.hoverAlpha.getValue());
+        eclipseware.commandManager.setPrefix(this.prefix.getValue());
     }
 
     @Override

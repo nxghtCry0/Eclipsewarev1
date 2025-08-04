@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.event.impl;
+package me.nxght.eclipseware.event.impl;
 
-import me.alpha432.oyvey.event.Event;
-import me.alpha432.oyvey.event.Stage;
+import me.nxght.eclipseware.event.Event;
+import me.nxght.eclipseware.event.Stage;
 
 public class UpdateWalkingPlayerEvent extends Event {
     private final Stage stage;

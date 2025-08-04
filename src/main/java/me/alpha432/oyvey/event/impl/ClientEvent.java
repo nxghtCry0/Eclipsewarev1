@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.event.impl;
+package me.nxght.eclipseware.event.impl;
 
-import me.alpha432.oyvey.event.Event;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.settings.Setting;
+import me.nxght.eclipseware.event.Event;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.features.settings.Setting;
 
 public class ClientEvent extends Event {
     private Feature feature;

@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.features.settings;
+package me.nxght.eclipseware.features.settings;
 
 public interface SettingFactory {
     <T extends Setting<?>> T register(T setting);

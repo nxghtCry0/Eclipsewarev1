@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
-import me.alpha432.oyvey.features.Feature;
+import me.nxght.eclipseware.features.Feature;
 import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.HashMap;

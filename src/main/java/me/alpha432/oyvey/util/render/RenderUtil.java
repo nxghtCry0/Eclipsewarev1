@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.util.render;
+package me.nxght.eclipseware.util.render;
 
 import com.mojang.blaze3d.vertex.VertexFormat;
-import me.alpha432.oyvey.util.traits.Util;
+import me.nxght.eclipseware.util.traits.Util;
 import net.minecraft.client.render.*;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.BlockPos;

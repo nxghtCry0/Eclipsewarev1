@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.util.models;
+package me.nxght.eclipseware.util.models;
 
 public class Timer {
     private long time = -1L;

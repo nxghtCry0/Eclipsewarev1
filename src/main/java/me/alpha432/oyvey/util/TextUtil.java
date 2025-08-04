@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.util;
+package me.nxght.eclipseware.util;
 
 import dev.cattyn.catformat.CatFormat;
 import dev.cattyn.catformat.fabric.FabricCatFormat;
-import me.alpha432.oyvey.OyVey;
+import me.nxght.eclipseware.eclipseware;
 import net.minecraft.text.MutableText;
 
 public final class TextUtil {
@@ -26,6 +26,6 @@ public final class TextUtil {
     }
 
     private static void initColors() {
-        formatter.add("global", () -> OyVey.colorManager.getColorAsInt());
+        formatter.add("global", () -> eclipseware.colorManager.getColorAsInt());
     }
 }

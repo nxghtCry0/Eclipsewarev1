@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
-import me.alpha432.oyvey.features.gui.Component;
-import me.alpha432.oyvey.features.modules.client.ClickGui;
-import me.alpha432.oyvey.util.ColorUtil;
+import me.nxght.eclipseware.features.gui.Component;
+import me.nxght.eclipseware.features.modules.client.ClickGui;
+import me.nxght.eclipseware.util.ColorUtil;
 
 import java.awt.*;
 

@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.features.modules.combat;
+package me.nxght.eclipseware.features.modules.combat;
 
 import com.google.common.eventbus.Subscribe;
-import me.alpha432.oyvey.event.impl.PacketEvent;
-import me.alpha432.oyvey.features.modules.Module;
+import me.nxght.eclipseware.event.impl.PacketEvent;
+import me.nxght.eclipseware.features.modules.Module;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.decoration.EndCrystalEntity;

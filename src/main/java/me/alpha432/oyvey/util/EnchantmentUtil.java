@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.util;
+package me.nxght.eclipseware.util;
 
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import me.alpha432.oyvey.util.traits.Util;
+import me.nxght.eclipseware.util.traits.Util;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;

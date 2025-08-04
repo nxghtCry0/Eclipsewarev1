@@ -1,11 +1,11 @@
-package me.alpha432.oyvey.features.gui.items.buttons;
+package me.nxght.eclipseware.features.gui.items.buttons;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.gui.Component;
-import me.alpha432.oyvey.features.gui.OyVeyGui;
-import me.alpha432.oyvey.features.modules.client.ClickGui;
-import me.alpha432.oyvey.features.settings.Setting;
-import me.alpha432.oyvey.util.render.RenderUtil;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.features.gui.Component;
+import me.nxght.eclipseware.features.gui.OyVeyGui;
+import me.nxght.eclipseware.features.modules.client.ClickGui;
+import me.nxght.eclipseware.features.settings.Setting;
+import me.nxght.eclipseware.util.render.RenderUtil;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.util.Formatting;
 import org.lwjgl.glfw.GLFW;
@@ -30,7 +30,7 @@ public class Slider
     public void drawScreen(DrawContext context, int mouseX, int mouseY, float partialTicks) {
         this.dragSetting(mouseX, mouseY);
         RenderUtil.rect(context.getMatrices(), this.x, this.y, this.x + (float) this.width + 7.4f, this.y + (float) this.height - 0.5f, !this.isHovering(mouseX, mouseY) ? 0x11555555 : -2007673515);
-        RenderUtil.rect(context.getMatrices(), this.x, this.y, (this.setting.getValue()).floatValue() <= this.min.floatValue() ? this.x : this.x + ((float) this.width + 7.4f) * this.partialMultiplier(), this.y + (float) this.height - 0.5f, !this.isHovering(mouseX, mouseY) ? OyVey.colorManager.getColorWithAlpha(OyVey.moduleManager.getModuleByClass(ClickGui.class).hoverAlpha.getValue()) : OyVey.colorManager.getColorWithAlpha(OyVey.moduleManager.getModuleByClass(ClickGui.class).alpha.getValue()));
+        RenderUtil.rect(context.getMatrices(), this.x, this.y, (this.setting.getValue()).floatValue() <= this.min.floatValue() ? this.x : this.x + ((float) this.width + 7.4f) * this.partialMultiplier(), this.y + (float) this.height - 0.5f, !this.isHovering(mouseX, mouseY) ? eclipseware.colorManager.getColorWithAlpha(eclipseware.moduleManager.getModuleByClass(ClickGui.class).hoverAlpha.getValue()) : eclipseware.colorManager.getColorWithAlpha(eclipseware.moduleManager.getModuleByClass(ClickGui.class).alpha.getValue()));
         drawString(this.getName() + " " + Formatting.GRAY + (this.setting.getValue() instanceof Float ? this.setting.getValue() : Double.valueOf((this.setting.getValue()).doubleValue())), this.x + 2.3f, this.y - 1.7f - (float) OyVeyGui.getClickGui().getTextOffset(), -1);
     }
 

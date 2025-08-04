@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.util.models.Timer;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.util.models.Timer;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;

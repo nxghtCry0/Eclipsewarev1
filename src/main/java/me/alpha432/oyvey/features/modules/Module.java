@@ -1,17 +1,17 @@
-package me.alpha432.oyvey.features.modules;
+package me.nxght.eclipseware.features.modules;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.event.impl.ClientEvent;
-import me.alpha432.oyvey.event.impl.Render2DEvent;
-import me.alpha432.oyvey.event.impl.Render3DEvent;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.features.settings.Bind;
-import me.alpha432.oyvey.features.settings.Setting;
-import me.alpha432.oyvey.manager.ConfigManager;
-import me.alpha432.oyvey.util.traits.Jsonable;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.event.impl.ClientEvent;
+import me.nxght.eclipseware.event.impl.Render2DEvent;
+import me.nxght.eclipseware.event.impl.Render3DEvent;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.features.commands.Command;
+import me.nxght.eclipseware.features.settings.Bind;
+import me.nxght.eclipseware.features.settings.Setting;
+import me.nxght.eclipseware.manager.ConfigManager;
+import me.nxght.eclipseware.util.traits.Jsonable;
 import net.minecraft.util.Formatting;
 
 public class Module extends Feature implements Jsonable {
@@ -113,8 +113,8 @@ public class Module extends Feature implements Jsonable {
     }
 
     public void setDisplayName(String name) {
-        Module module = OyVey.moduleManager.getModuleByDisplayName(name);
-        Module originalModule = OyVey.moduleManager.getModuleByName(name);
+        Module module = eclipseware.moduleManager.getModuleByDisplayName(name);
+        Module originalModule = eclipseware.moduleManager.getModuleByName(name);
         if (module == null && originalModule == null) {
             Command.sendMessage(this.getDisplayName() + ", name: " + this.getName() + ", has been renamed to: " + name);
             this.displayName.setValue(name);

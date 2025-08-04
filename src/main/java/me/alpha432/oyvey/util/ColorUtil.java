@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.util;
+package me.nxght.eclipseware.util;
 
-import me.alpha432.oyvey.features.modules.client.ClickGui;
+import me.nxght.eclipseware.features.modules.client.ClickGui;
 
 import java.awt.*;
 

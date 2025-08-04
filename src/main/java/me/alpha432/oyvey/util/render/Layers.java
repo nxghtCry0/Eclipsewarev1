@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.util.render;
+package me.nxght.eclipseware.util.render;
 
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderPhase;
@@ -7,8 +7,8 @@ import net.minecraft.util.Util;
 import java.util.OptionalDouble;
 import java.util.function.Function;
 
-import static me.alpha432.oyvey.util.render.Pipelines.GLOBAL_LINES_PIPELINE;
-import static me.alpha432.oyvey.util.render.Pipelines.GLOBAL_QUADS_PIPELINE;
+import static me.nxght.eclipseware.util.render.Pipelines.GLOBAL_LINES_PIPELINE;
+import static me.nxght.eclipseware.util.render.Pipelines.GLOBAL_QUADS_PIPELINE;
 
 public class Layers {
     private static final RenderLayer GLOBAL_QUADS;

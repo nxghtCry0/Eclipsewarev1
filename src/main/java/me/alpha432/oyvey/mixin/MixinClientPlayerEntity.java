@@ -1,15 +1,15 @@
-package me.alpha432.oyvey.mixin;
+package me.nxght.eclipseware.mixin;
 
-import me.alpha432.oyvey.event.Stage;
-import me.alpha432.oyvey.event.impl.UpdateEvent;
-import me.alpha432.oyvey.event.impl.UpdateWalkingPlayerEvent;
+import me.nxght.eclipseware.event.Stage;
+import me.nxght.eclipseware.event.impl.UpdateEvent;
+import me.nxght.eclipseware.event.impl.UpdateWalkingPlayerEvent;
 import net.minecraft.client.network.ClientPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import static me.alpha432.oyvey.util.traits.Util.EVENT_BUS;
+import static me.nxght.eclipseware.util.traits.Util.EVENT_BUS;
 
 @Mixin(ClientPlayerEntity.class)
 public class MixinClientPlayerEntity {

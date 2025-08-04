@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.mixin;
+package me.nxght.eclipseware.mixin;
 
-import me.alpha432.oyvey.OyVey;
+import me.nxght.eclipseware.eclipseware;
 import net.minecraft.client.render.RenderTickCounter;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -15,6 +15,6 @@ public class MixinRenderTickCounter {
 
     @Inject(method = "beginRenderTick(J)I", at = @At(value = "FIELD", target = "Lnet/minecraft/client/render/RenderTickCounter$Dynamic;lastTimeMillis:J"))
     public void beginRenderTick(long timeMillis, CallbackInfoReturnable<Integer> cir) {
-        this.dynamicDeltaTicks *= OyVey.TIMER;
+        this.dynamicDeltaTicks *= eclipseware.TIMER;
     }
 }

@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.features.modules.movement;
+package me.nxght.eclipseware.features.modules.movement;
 
-import me.alpha432.oyvey.features.modules.Module;
-import me.alpha432.oyvey.features.settings.Setting;
+import me.nxght.eclipseware.features.modules.Module;
+import me.nxght.eclipseware.features.settings.Setting;
 import net.minecraft.entity.attribute.EntityAttributes;
 
 public class Step extends Module {

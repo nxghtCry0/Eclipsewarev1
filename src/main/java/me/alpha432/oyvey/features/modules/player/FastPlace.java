@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.features.modules.player;
+package me.nxght.eclipseware.features.modules.player;
 
-import me.alpha432.oyvey.features.modules.Module;
+import me.nxght.eclipseware.features.modules.Module;
 import net.minecraft.item.Items;
 
 public class FastPlace extends Module {

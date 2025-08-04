@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.util.render;
+package me.nxght.eclipseware.util.render;
 
 import com.mojang.blaze3d.pipeline.BlendFunction;
 import com.mojang.blaze3d.pipeline.RenderPipeline;

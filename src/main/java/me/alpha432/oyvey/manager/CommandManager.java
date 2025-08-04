@@ -1,11 +1,11 @@
-package me.alpha432.oyvey.manager;
+package me.nxght.eclipseware.manager;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.features.commands.impl.*;
-import me.alpha432.oyvey.util.traits.Jsonable;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.features.commands.Command;
+import me.nxght.eclipseware.features.commands.impl.*;
+import me.nxght.eclipseware.util.traits.Jsonable;
 import net.minecraft.util.Formatting;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.List;
 public class CommandManager
         extends Feature implements Jsonable {
     private final List<Command> commands = new ArrayList<>();
-    private String clientMessage = "<OyVey>";
+    private String clientMessage = "<eclipseware>";
     private String prefix = ".";
 
     public CommandManager() {

@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.features.commands;
+package me.nxght.eclipseware.features.commands;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.util.TextUtil;
+import me.nxght.eclipseware.eclipseware;
+import me.nxght.eclipseware.features.Feature;
+import me.nxght.eclipseware.util.TextUtil;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -31,7 +31,7 @@ public abstract class Command
 
     public static void sendMessage(Text message) {
         MutableText text = Text.empty();
-        text.append(OyVey.commandManager.getClientMessage() + " " + Formatting.GRAY);
+        text.append(eclipseware.commandManager.getClientMessage() + " " + Formatting.GRAY);
         text.append(message);
         Command.sendSilentMessage(text);
     }
@@ -45,7 +45,7 @@ public abstract class Command
     }
 
     public static String getCommandPrefix() {
-        return OyVey.commandManager.getPrefix();
+        return eclipseware.commandManager.getPrefix();
     }
 
     public abstract void execute(String[] var1);

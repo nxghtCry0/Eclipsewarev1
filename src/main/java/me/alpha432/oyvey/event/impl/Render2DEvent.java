@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.event.impl;
+package me.nxght.eclipseware.event.impl;
 
-import me.alpha432.oyvey.event.Event;
+import me.nxght.eclipseware.event.Event;
 import net.minecraft.client.gui.DrawContext;
 
 public class Render2DEvent extends Event {
